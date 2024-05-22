@@ -1,0 +1,24 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+
+</style>
+
+<main class="flex justify-center items-center h-screen bg-gray-200">
+  <div class="p-8 bg-white rounded shadow-md max-w-md">
+    <h2 class="text-2xl font-bold mb-4">{{ joke?.value }}</h2>
+    <p class="mb-2">Categories: <span class="font-semibold">{{ joke?.categories?.join(', ') }}</span></p>
+    <p class="mb-2">Created at: <span class="font-semibold">{{ joke?.created_at }}</span></p>
+    <img class="w-24 h-24 object-cover mb-4" src="https://m.media-amazon.com/images/M/MV5BMDRiZjQ2ODEtMTkxYy00OWRmLTg0Y2YtMjBjMzZmNzdlN2IzXkEyXkFqcGdeQXVyMDgyNjA5MA@@._V1_.jpg" alt="Joke Icon">
+    <p class="mb-2">ID: <span class="font-semibold">{{ joke?.id }}</span></p>
+    <p class="mb-2">Updated at: <span class="font-semibold">{{ joke?.updated_at }}</span></p>
+    <p class="mb-2">URL: <a class="text-blue-500 hover:underline" [href]="joke?.url" target="_blank">{{ joke?.url }}</a></p>
+  </div>
+</main>
